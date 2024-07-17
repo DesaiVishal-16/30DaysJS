@@ -65,7 +65,7 @@ specificChar("specific", "if");
 
 function productOfNum(num1, num2 = 5) {
   const product = num1 * num2;
-  console.log(`Product of ${num1} and ${num2} is ${product}`);
+  console.log(`Product of ${num1} and ${num3} is ${product}`);
 }
 productOfNum(3);
 
