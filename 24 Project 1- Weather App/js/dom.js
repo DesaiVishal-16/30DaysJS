@@ -1,0 +1,15 @@
+export const DOM = {
+  currentTime: document.getElementById("current-time"),
+  currentCity: document.getElementById("current-city"),
+  currentRegion: document.getElementById("current-region"),
+  currentCountry: document.getElementById("current-country"),
+  displayDiv: document.getElementById("current-weather-data"),
+  temp: document.getElementById("tempInC"),
+  feelsLike: document.getElementById("feels-like"),
+  upTemp: document.getElementById("upTemp"),
+  downTemp: document.getElementById("downTemp"),
+  inputField: document.getElementById("input-field"),
+  navCity: document.getElementById("nav-city"),
+  hourlyWeather: document.getElementById("hourly-weather"),
+  form: document.getElementById("form"),
+};

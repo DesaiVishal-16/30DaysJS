@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get real-time weather updates for any city around the world."
+    />
+    <meta
+      name="keywords"
+      content="Weather, Forecast, City Weather, Climate, Temperature"
+    />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="img/logo-ico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="name-logo" aria-label="Application logo and name">
+        <h1>Weather App</h1>
+        <img id="logo" src="img/logo-png.png" alt="Weather App Logo" />
+      </div>
+      <div class="search">
+        <i
+          id="location"
+          class="fa-solid fa-location-dot"
+          aria-hidden="true"
+        ></i>
+        <span id="nav-city" aria-label="Current city name">City Name</span>
+        <form id="form" aria-label="City search form">
+          <input
+            id="input-field"
+            type="text"
+            placeholder="Enter City Name"
+            required
+            aria-label="City search input"
+          />
+          <button type="submit" id="search-btn" aria-label="Search button">
+            <i
+              id="btn"
+              class="fa-solid fa-magnifying-glass"
+              aria-hidden="true"
+            ></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Current Weather Section -->
+      <section
+        id="current-weather-data"
+        aria-labelledby="current-weather-heading"
+      >
+        <div id="location-time">
+          <h3 id="current-time" aria-label="Current time">Time</h3>
+          <p>
+            <span id="current-city">City,</span>
+            <span id="current-region">Region,</span>
+            <span id="current-country">Country</span>
+          </p>
+        </div>
+        <div id="today-weather">
+          <div id="today-temp">
+            <h1 id="tempInC" aria-label="Current temperature">Temp</h1>
+            <p id="feels-like">Feels like 0&deg;</p>
+            <span id="upTemp">0&deg;C&uarr;</span>&nbsp;
+            <span id="downTemp">0&deg;C&darr;</span>
+          </div>
+          <div id="hourly-weather" aria-label="Hourly weather forecast"></div>
+        </div>
+        <div id="today-weather-stats">
+          <div id="aqi-index">
+            <span aria-label="AQI Index">AQI Index</span>
+            <span class="fa-solid fa-weight-scale"></span>
+            <span id="aqi-index-data" aria-label="AQI Index data">0</span>
+          </div>
+          <div id="additional-stats">
+            <div id="visibility">
+              <span aria-label="Visibility">Visibility</span>
+              <span class="fa-solid fa-eye"></span>
+              <span id="visibility-data" aria-label="Visibility data">0</span>
+            </div>
+            <div id="humidity">
+              <span aria-label="Humidity">Humidity</span>
+              <span class="fa-solid fa-droplet"></span>
+              <span id="humidity-data" aria-label="Humidity data">0</span>
+            </div>
+            <div id="wind-speed">
+              <span aria-label="Wind Speed">Wind Speed</span>
+              <span class="fa-solid fa-wind"></span>
+              <span id="wind-speed-data" aria-label="Wind Speed data">0</span>
+            </div>
+            <div id="rain">
+              <span aria-label="Rain">Rain</span>
+              <span class="fa-solid fa-umbrella"></span>
+              <span id="rain-data" aria-label="Rain data">0</span>
+            </div>
+            <div id="sunrise">
+              <span aria-label="Sunrise">Sunrise</span>
+              <span class="fa-solid fa-sun"></span>
+              <span id="sunrise-data" aria-label="Sunrise data">0</span>
+            </div>
+            <div id="sunset">
+              <span aria-label="Sunset">Sunset</span>
+              <span class="fa-solid fa-moon"></span>
+              <span id="sunset-data" aria-label="Sunset data">0</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Forecast Weather Section -->
+      <section id="forecast-weather" aria-labelledby="forecast-weather-heading">
+        <h2 id="forecast-weather-heading">Upcoming Weather Forecast</h2>
+        <div id="forecast-detail"></div>
+      </section>
+    </main>
+    <script src="dist/bundle.js" defer></script>
+  </body>
+</html>
